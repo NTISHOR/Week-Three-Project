@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    padding: 20px;
 }
 
 #root {
@@ -14,6 +15,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
 }
 
 button {
@@ -25,6 +28,7 @@ button {
     cursor: pointer;
     background-color: #007bff;
     color: white;
+    width: calc(33% - 10px);
 }
 
 button:hover {
@@ -33,10 +37,11 @@ button:hover {
 
 h1 {
     color: #333;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
 h2 {
-    font-size: 36px;
+    font-size: clamp(2rem, 8vw, 3rem);
     margin: 20px 0;
 }
 
@@ -44,4 +49,6 @@ input {
     padding: 10px;
     font-size: 16px;
     margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
